@@ -4,7 +4,7 @@ def oxford_comma(array)
   elsif array[2] == nil
     return "#{array[0]} and #{array[1]}"
   elsif array[3] == nil
-    array[2].insert(0, "and ")
+    array[-1].insert(0, "and ")
   else array[4] == nil
     array[-1].insert(0, "and ")
   end
